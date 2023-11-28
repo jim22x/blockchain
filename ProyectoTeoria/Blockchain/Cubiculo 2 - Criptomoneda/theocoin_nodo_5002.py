@@ -54,7 +54,7 @@ class Blockchain:
         return block
     
     def add_transaction(self, emisor, receptor, monto):
-        self.transaction.append({'emisor': emisor,
+        self.transactions.append({'emisor': emisor,
                                  'receptor': receptor,
                                  'monto': monto})
         previous_block = self.get_previous_block()
@@ -167,7 +167,7 @@ def add_transaction():
         return 'Algún elemento de la transacción esta faltante', 400
     
     index = blockchain.add_transaction(json['emisor'], json['receptor'], json['monto'])
-    response = {'message': f'La transsación sera añadida al bloque {index}'}
+    response = {'message':'La transsación sera añadida al bloque {index}'}
     return jsonify(response), 201
 
 

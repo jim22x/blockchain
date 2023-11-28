@@ -1,5 +1,5 @@
 {
-    "emisor": "";
-    "receptor": "";
-    "monto": "";
+    "emisor": "",
+    "receptor": "",
+    "monto": "10"
 }
